@@ -1,0 +1,24 @@
+name: yt_bakuhator
+description: A youtube exploder 
+version: 0.0.1
+author: Sesaka Aji Nursyah Bantani<shakaaji29@gmail.com>
+homepage: https://github.com/IzumiShaka-desu/yt_bakuhator
+
+environment:
+  sdk: '>=2.6.0 <3.0.0'
+
+dependencies:
+  html: ^0.14.0+3
+  http: ^0.12.0+4
+  http_parser: ^3.1.3
+  xml: '>=3.0.0 <5.0.0'
+  equatable: ^1.1.0
+  meta: ^1.1.8
+
+
+dev_dependencies:
+  effective_dart: ^1.2.3
+  console: ^3.1.0
+  test: ^1.12.0
+  grinder: ^0.8.5
+  pedantic: ^1.9.2
