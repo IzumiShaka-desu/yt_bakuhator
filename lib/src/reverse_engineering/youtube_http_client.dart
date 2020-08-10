@@ -86,7 +86,6 @@ class YoutubeHttpClient extends http.BaseClient {
   }
 
   ///
-  // TODO: Check why isRateLimited is not working.
   Stream<List<int>> getStream(StreamInfo streamInfo,
       {Map<String, String> headers,
       bool validate = true,

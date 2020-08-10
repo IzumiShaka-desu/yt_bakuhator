@@ -39,7 +39,7 @@ void main() {
       expect(yt.videos.streamsClient.getManifest(VideoId('p3dDcKOFXQg')),
           throwsA(const TypeMatcher<VideoRequiresPurchaseException>()));
     });
-    //TODO: Fix this with VideoRequiresPurchaseException.
+   
     test('GetStreamOfPurchaseVideo', () async {
       expect(yt.videos.streamsClient.getManifest(VideoId('qld9w0b-1ao')),
           throwsA(const TypeMatcher<VideoUnavailableException>()));

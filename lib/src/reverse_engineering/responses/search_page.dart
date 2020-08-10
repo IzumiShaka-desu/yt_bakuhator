@@ -72,7 +72,6 @@ class SearchPage {
         _xsrfToken = xsfrToken;
 
   ///
-  // TODO: Replace this in favour of async* when quering;
   Future<SearchPage> nextPage(YoutubeHttpClient httpClient) async {
     if (initialData.continuation == '') {
       return null;
@@ -205,7 +204,7 @@ class _InitialData {
     }
     if (content.containsKey('videoRenderer')) {
       Map<String, dynamic> renderer = content['videoRenderer'];
-      //TODO: Add if it's a live
+      
       return SearchVideo(
           VideoId(renderer['videoId']),
           _parseRuns(renderer['title']),
