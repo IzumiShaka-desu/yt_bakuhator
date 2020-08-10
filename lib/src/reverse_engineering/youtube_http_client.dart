@@ -18,12 +18,13 @@ class YoutubeHttpClient extends http.BaseClient {
     'x-youtube-client-version': '2.20200609.04.02',
     'x-spf-previous': 'https://www.youtube.com/',
     'x-spf-referer': 'https://www.youtube.com/',
+    'Access-Control-Allow-Origin':'*',
+    'Access-Control-Allow-Methods':'POST,GET,DELETE,PUT,OPTIONS',
     'x-youtube-device':
         'cbr=Chrome&cbrver=81.0.4044.138&ceng=WebKit&cengver=537.36'
             '&cos=Windows&cosver=10.0',
     'x-youtube-page-label': 'youtube.ytfe.desktop_20200617_1_RC1',
-    'Access-Control-Allow-Origin':'*',
-    'Access-Control-Allow-Methods':'POST,GET,DELETE,PUT,OPTIONS'
+    
   };
   
 
