@@ -8,25 +8,21 @@ import '../videos/streams/streams.dart';
 ///
 class YoutubeHttpClient extends http.BaseClient {
   final http.Client _httpClient = http.Client();
-
   final Map<String, String> _defaultHeaders = const {
-    
     'user-agent':
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+        'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Mobile Safari/537.36',
     'accept-language': 'en-US,en;q=1.0',
     'x-youtube-client-name': '1',
     'x-youtube-client-version': '2.20200609.04.02',
     'x-spf-previous': 'https://www.youtube.com/',
     'x-spf-referer': 'https://www.youtube.com/',
-    'Access-Control-Allow-Origin':'https://www.youtube.com/',
-    'Access-Control-Allow-Methods':'POST,GET,DELETE,PUT,OPTIONS',
+    'Access-Control-Allow-Origin': 'https://www.youtube.com/',
+    'Access-Control-Allow-Methods': 'POST,GET,DELETE,PUT,OPTIONS',
     'x-youtube-device':
         'cbr=Chrome&cbrver=81.0.4044.138&ceng=WebKit&cengver=537.36'
             '&cos=Windows&cosver=10.0',
     'x-youtube-page-label': 'youtube.ytfe.desktop_20200617_1_RC1',
-    
   };
-  
 
   /// Throws if something is wrong with the response.
   void _validateResponse(http.BaseResponse response, int statusCode) {
